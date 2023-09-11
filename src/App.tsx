@@ -37,14 +37,14 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/action" element={<ActionPage />} />
+              <Route path="/activity" element={<ActionPage />} />
 
             </Routes>
           </BrowserRouter>
         </ThemeProvider>
       </Container>
       <Footer
-        title="Footer"
+        title="LIÊN CHI HỘI SINH VIÊN TRÀ VINH TRƯỜNG ĐẠI HỌC CẦN THƠ"
         description="Something here to give the footer a purpose!"
       />
 
