@@ -81,7 +81,7 @@ const ListCardUnit = [
 const HomePage = () => {
     return (
         <div>
-            <Container sx={{ py: 4 }} maxWidth="md">
+            <Container sx={{ py: 4 }} maxWidth="lg">
                 <Cover post={mainFeaturedPost}/>
                 <ListCard card={ListCardUnit} />
             </Container>  
