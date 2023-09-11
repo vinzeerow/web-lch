@@ -25,7 +25,9 @@ export default function Hero(props: MainFeaturedPostProps) {
   const { post } = props;
 
   return (
-    <></>
+    <>
+    sjalskdaljskdj
+    </>
       
   );
 }
