@@ -26,7 +26,7 @@ export default function Header(props: HeaderProps) {
           <CsFlex>
             <img src="/images/logo-lchsv-tra-vinh.png?version=1.1" alt="" />
             <CsFlexCol>
-              <Typography variant="h6" py="0px" my="0px" lineHeight="22px" color="inherit">
+              <Typography variant="h6" py="0px" my="0px" lineHeight="22px" color="#830000">
                 LCHSV TRÀ VINH
 
               </Typography>
@@ -36,15 +36,12 @@ export default function Header(props: HeaderProps) {
             </CsFlexCol>
 
           </CsFlex>
-
-
-
           <ListLinkMenu>
             <CsLink
               variant="button"
               color="text.primary"
               href="/"
-              sx={{ my: 1, mx: 1.5 }}
+              sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
             >
               Trang chủ
             </CsLink>
@@ -52,7 +49,7 @@ export default function Header(props: HeaderProps) {
               variant="button"
               color="text.primary"
               href="/activity"
-              sx={{ my: 1, mx: 1.5 }}
+              sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
             >
               Hoạt động Hội
             </CsLink>
@@ -60,11 +57,11 @@ export default function Header(props: HeaderProps) {
               variant="button"
               color="text.primary"
               href="#"
-              sx={{ my: 1, mx: 1.5 }}
+              sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
             >
               Liên hệ
             </CsLink>
-            <Button href="#" sx={{ backgroundColor: "#830000", color: "#fff", py: "6px", px: "18px", my: 1, mx: 1.5 }}>
+            <Button href="#"  sx={{ backgroundColor: "#fff", color: "#830000", border:"1px solid #830000", py: "6px", px: "18px", my: 1, mx: 1.5 }}>
               Kết nạp Hội
             </Button>
           </ListLinkMenu>
@@ -93,7 +90,11 @@ const CsLink = styled(Link)`
   list-style: none;
   align-items: center;
   text-decoration:none;
+  :hover{
+    color:#830000;
+  }
 `
+
 const CsFlex = styled.div`
     display: flex;
     gap:1rem;
@@ -127,6 +128,7 @@ const ContainerFlex = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
     @media screen and (max-width:600px) {
       flex-direction: column;
       padding-top:0.5rem;

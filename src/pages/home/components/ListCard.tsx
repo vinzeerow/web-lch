@@ -35,19 +35,32 @@ export default function ListCard(props: ListCardItem) {
                                 component="div"
                                 sx={{
                                     // 16:9
+
                                     pt: '56.25%',
                                 }}
                                 image={card.image}
                             />
                             <CardContent sx={{ flexGrow: 1 }}>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    {card.title}
-                                </Typography>
+                                <Grid container spacing={8}>
+                                    <Grid item xs={3}>
+                                        <img style={{ borderRadius: "8px", margin: 0 }} width="80px" height="80px" src={card.avatar} alt="" />
+                                    </Grid>
+                                    <Grid item xs={9}>
+                                        <Typography align='left' gutterBottom variant="h6" component="h2">
+                                            {card.title}
+                                        </Typography>
+                                        <CardActions sx={{ p: 0, m: 0 }}>
+                                            <Link href={card?.linkFanpage} >
+                                                <Button  sx={{ border: "1px solid #830000", fontSize: "12px", textTransform: "inherit", px: "0.5em", m: 0, color: "#830000" }}  size="small">Xem fanpage</Button>
+                                            </Link>
+
+                                        </CardActions>
+                                    </Grid>
+                                </Grid>
+
 
                             </CardContent>
-                            <CardActions>
-                                <Button href={card.linkText} size="small">Chi tiết</Button>
-                            </CardActions>
+
                         </Card>
                     </Grid>
                 ))}

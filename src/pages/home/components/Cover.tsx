@@ -56,9 +56,10 @@ export default function Cover(props: MainFeaturedPostProps) {
                 position: 'relative',
                 p: { xs: 3, md: 6 },
                 pr: { md: 0 },
+                height:"300px"
               }}
             >
-              <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+              {/* <Typography component="h1" variant="h3" color="inherit" gutterBottom>
                 {post.title}
               </Typography>
               <Typography variant="h5" color="inherit" paragraph>
@@ -66,7 +67,7 @@ export default function Cover(props: MainFeaturedPostProps) {
               </Typography>
               <Link variant="subtitle1" href="#">
                 {post.linkText}
-              </Link>
+              </Link> */}
             </Box>
           </Grid>
         </Grid>

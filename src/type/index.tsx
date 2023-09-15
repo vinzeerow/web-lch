@@ -7,6 +7,8 @@ export interface CoverActivity {
 };
 export interface CardUnit {
     image: string;
+    avatar:string;
     linkText: string;
     title: string;
+    linkFanpage:string;
 };
