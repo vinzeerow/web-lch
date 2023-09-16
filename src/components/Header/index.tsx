@@ -9,15 +9,13 @@ import styled from 'styled-components';
 
 
 interface HeaderProps {
-  sections: ReadonlyArray<{
-    title: string;
-    url: string;
-  }>;
   title: string;
+  subTitle: string;
+  urlJoin: string;
 }
 
 export default function Header(props: HeaderProps) {
-  const { sections, title } = props;
+
 
   return (
     <React.Fragment>
@@ -27,11 +25,10 @@ export default function Header(props: HeaderProps) {
             <img src="/images/logo-lchsv-tra-vinh.png?version=1.1" alt="" />
             <CsFlexCol>
               <Typography variant="h6" py="0px" my="0px" lineHeight="22px" color="#830000">
-                LCHSV TRÀ VINH
-
+                {props?.title}
               </Typography>
               <Typography variant="subtitle1" py="0px" my="0px" lineHeight="22px" color="inherit">
-                Trường Đại học Cần Thơ
+                {props?.subTitle}
               </Typography>
             </CsFlexCol>
 
@@ -61,7 +58,7 @@ export default function Header(props: HeaderProps) {
             >
               Liên hệ
             </CsLink>
-            <Button href="#"  sx={{ backgroundColor: "#fff", color: "#830000", border:"1px solid #830000", py: "6px", px: "18px", my: 1, mx: 1.5 }}>
+            <Button href={props?.urlJoin} sx={{ backgroundColor: "#fff", color: "#830000", border: "1px solid #830000", py: "6px", px: "18px", my: 1, mx: 1.5 }}>
               Kết nạp Hội
             </Button>
           </ListLinkMenu>

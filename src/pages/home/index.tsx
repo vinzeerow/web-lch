@@ -41,8 +41,8 @@ const ListCardUnit = [
     },
     {
         title: 'CHSV Cầu Kè',
-        image: 'https://source.unsplash.com/random?wallpapers',
-        avatar: '/images/logo-cauke.jpg',
+        image: '/images/cover-card-cauke.jpg',
+        avatar: '/images/logo-cauke.png',
         linkText: 'Continue reading…',
         linkFanpage: "https://www.facebook.com/chsvcaukedhct"
     },

@@ -5,34 +5,21 @@ import HomePage from './pages/home';
 import Container from './components/Layout/Container';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import {
-  BrowserRouter,
-  Link,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ActionPage from './pages/action';
 import FormContact from './pages/contact';
-// TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
-const sections = [
-  { title: 'Technology', url: '#' },
-  { title: 'Design', url: '#' },
-  { title: 'Culture', url: '#' },
-  { title: 'Business', url: '#' },
-  { title: 'Politics', url: '#' },
-  { title: 'Opinion', url: '#' },
-  { title: 'Science', url: '#' },
-  { title: 'Health', url: '#' },
-  { title: 'Style', url: '#' },
-  { title: 'Travel', url: '#' },
-];
+const dataHeader = {
+  title: "LCHSV TRÀ VINH",
+  subTitle: "Trường Đại học Cần Thơ",
+  urlJoin: "https://forms.gle/M3NrzZHtPxpiMVch7"
+}
 
 function App() {
   return (
     <div className="App">
-      <Header title="Blog" sections={sections} />
+      <Header title={dataHeader?.title} subTitle={dataHeader?.subTitle} urlJoin={dataHeader?.urlJoin} />
       <Container>
         <ThemeProvider theme={defaultTheme}>
           <BrowserRouter>
