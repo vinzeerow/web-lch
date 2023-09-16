@@ -56,7 +56,7 @@ export default function Header(props: HeaderProps) {
             <CsLink
               variant="button"
               color="text.primary"
-              href="#"
+              href="/contact"
               sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
             >
               Liên hệ

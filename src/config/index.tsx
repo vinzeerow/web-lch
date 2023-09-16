@@ -1,6 +1,10 @@
 import { ElementType } from "react";
 import { FacebookIcon, InvoiceIcon, LocationIcon, PhoneIcon } from "../components/Icons";
 
+export const SERVICE_ID = "service_b2ncl5h"
+export const TEMPLATE_ID = "template_r1h8v2d"
+export const PUBLIC_KEY = "Zdve6Hh1yZ3YwVqER"
+
 interface ContactItem {
     name: string,
     icon: ElementType<any>,

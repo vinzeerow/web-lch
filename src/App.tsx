@@ -12,6 +12,7 @@ import {
   Routes,
 } from "react-router-dom";
 import ActionPage from './pages/action';
+import FormContact from './pages/contact';
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
@@ -38,7 +39,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/activity" element={<ActionPage />} />
-
+              <Route path="/contact" element={<FormContact />} />
             </Routes>
           </BrowserRouter>
         </ThemeProvider>
