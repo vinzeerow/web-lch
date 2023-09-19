@@ -12,3 +12,13 @@ export interface CardUnit {
     title: string;
     linkFanpage:string;
 };
+
+export interface CardActivity {
+    image: string,
+    time: string,
+    address:string,
+    linkText: string,
+    title: string,
+    linkFanpage:string,
+    description:string,
+};

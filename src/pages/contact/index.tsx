@@ -8,6 +8,7 @@ import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from '../../config';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
+import { Box, Card, CardActionArea, CardContent, CardMedia } from '@mui/material';
 
 interface FormData {
     name: string;
@@ -44,13 +45,15 @@ const Form: React.FC = () => {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <Container sx={{ pt: 1, pb: 12 }} maxWidth="lg">
-                <Grid container spacing={3}>
-                    <Grid item xs={12} sm={6}>
-                        <Typography variant="h6" gutterBottom sx={{ textTransform: "uppercase", py: "1rem" }}>
-                            Liên hệ với LCHSV Trà Vinh
-                        </Typography>
+            <Container sx={{ p:0, pb:12}}>
+                <Grid container spacing={8} maxWidth="sm" margin="0 auto">
+                    
                         <Grid container spacing={3}>
+                            <Grid item xs={12} sm={12}>
+                                <Typography variant="h6" gutterBottom sx={{ textTransform: "uppercase", py: "0.5rem" }}>
+                                    Liên hệ với LCHSV Trà Vinh
+                                </Typography>
+                            </Grid>
                             <Grid item xs={12}>
                                 <StyledTextField
                                     required
@@ -145,10 +148,8 @@ const Form: React.FC = () => {
                                 </Button>
                             </Grid>
                         </Grid>
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
+                  
 
-                    </Grid>
                 </Grid>
             </Container>
         </form>
