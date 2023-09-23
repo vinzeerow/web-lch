@@ -68,7 +68,7 @@ const HomePage = () => {
         <div>
             <Container sx={{p:0, pt: 1, pb: 12 }} maxWidth="lg">
                 <Cover post={mainFeaturedPost} />
-                <Filter/>
+                {/* <Filter/> */}
                 <ColorTabs listActivityOutstanding={ListCardActivity}/>
             </Container>
         </div>

@@ -57,21 +57,36 @@ export const ColorTabs = (props: ListCardItem) => {
                     onChange={handleChange}
                     textColor="secondary"
                     indicatorColor="secondary"
+                    variant="scrollable"
+                    scrollButtons
+                    allowScrollButtonsMobile
                     aria-label="secondary tabs example"
                 >
                     <Tab label="Nổi bật" {...a11yProps(0)} />
                     <Tab label="Học tập tốt" {...a11yProps(1)} />
                     <Tab label="Đạo đức tốt" {...a11yProps(2)} />
+                    <Tab label="Thể lực tốt" {...a11yProps(3)} />
+                    <Tab label="Tình nguyện tốt" {...a11yProps(4)} />
+                    <Tab label="Hội nhập tốt" {...a11yProps(5)} />
                 </Tabs>
             </Box>
             <CustomTabPanel value={value} index={0}>
-                <OutstandingTab card={props?.listActivityOutstanding}/>
+                <OutstandingTab card={props?.listActivityOutstanding} />
             </CustomTabPanel>
             <CustomTabPanel value={value} index={1}>
-                Item Two
+                Chưa có dữ liệu
             </CustomTabPanel>
             <CustomTabPanel value={value} index={2}>
-                Item Three
+                Chưa có dữ liệu
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={3}>
+                Chưa có dữ liệu
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={4}>
+                Chưa có dữ liệu
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={5}>
+                Chưa có dữ liệu
             </CustomTabPanel>
         </Box>
     );

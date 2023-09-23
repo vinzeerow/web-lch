@@ -50,7 +50,7 @@ export default function Footer(props: FooterProps) {
           <img src="/images/logo-lchsv-tra-vinh.png?version=1.1" alt="" />
         </ColLeft>
         <ColRight>
-          <Typography color="white" variant="h5" align="left" gutterBottom>
+          <Typography color="white" variant="h6" align="left" gutterBottom>
             {title}
           </Typography>
 

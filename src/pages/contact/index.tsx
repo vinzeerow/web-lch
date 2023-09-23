@@ -46,7 +46,7 @@ const Form: React.FC = () => {
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <Container sx={{ p:0, pb:12}}>
-                <Grid container spacing={8} maxWidth="sm" margin="0 auto">
+                <Grid container maxWidth="sm" margin="0 auto">
                     
                         <Grid container spacing={3}>
                             <Grid item xs={12} sm={12}>
@@ -54,7 +54,7 @@ const Form: React.FC = () => {
                                     Liên hệ với LCHSV Trà Vinh
                                 </Typography>
                             </Grid>
-                            <Grid item xs={12}>
+                            <Grid item xs={12} sm={12}>
                                 <StyledTextField
                                     required
                                     id="name"

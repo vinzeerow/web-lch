@@ -33,35 +33,38 @@ export default function Header(props: HeaderProps) {
             </CsFlexCol>
 
           </CsFlex>
-          <ListLinkMenu>
-            <CsLink
-              variant="button"
-              color="text.primary"
-              href="/"
-              sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
-            >
-              Trang chủ
-            </CsLink>
-            <CsLink
-              variant="button"
-              color="text.primary"
-              href="/activity"
-              sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
-            >
-              Hoạt động Hội
-            </CsLink>
-            <CsLink
-              variant="button"
-              color="text.primary"
-              href="/contact"
-              sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
-            >
-              Liên hệ
-            </CsLink>
-            <Button href={props?.urlJoin} sx={{ backgroundColor: "#fff", color: "#830000", border: "1px solid #830000", py: "6px", px: "18px", my: 1, mx: 1.5 }}>
+          <ContainerFlexV2>
+            <ListLinkMenu>
+              <CsLink
+                variant="button"
+                color="text.primary"
+                href="/"
+                sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
+              >
+                Trang chủ
+              </CsLink>
+              <CsLink
+                variant="button"
+                color="text.primary"
+                href="/activity"
+                sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
+              >
+                Hoạt động Hội
+              </CsLink>
+              <CsLink
+                variant="button"
+                color="text.primary"
+                href="/contact"
+                sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
+              >
+                Liên hệ
+              </CsLink>
+            </ListLinkMenu>
+            <CsButton href={props?.urlJoin} >
               Kết nạp Hội
-            </Button>
-          </ListLinkMenu>
+            </CsButton>
+          </ContainerFlexV2>
+
         </ContainerFlex>
 
 
@@ -95,6 +98,7 @@ const CsLink = styled(Link)`
 const CsFlex = styled.div`
     display: flex;
     gap:1rem;
+    width: 100%;
     height: 100%;
     align-items: flex-start;
     justify-content: flex-start;
@@ -126,9 +130,31 @@ const ContainerFlex = styled.div`
     align-items: center;
     justify-content: space-between;
     
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:768px) {
       flex-direction: column;
       padding-top:0.5rem;
       padding-bottom: 0.5rem;
+    }
+`
+const ContainerFlexV2 = styled.div`
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    
+    @media screen and (max-width:768px) {
+      flex-direction: column;
+      padding-top:0.5rem;
+      padding-bottom: 0.5rem;
+    }
+`
+const CsButton = styled(Button)`
+  background-color: #830000 !important;
+  color: #fff !important;
+  padding: 10px 16px !important;
+  @media screen and (max-width:768px) {
+      width: 100% !important;
+      padding: 1rem 0rem !important;
     }
 `

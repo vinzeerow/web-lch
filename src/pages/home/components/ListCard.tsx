@@ -38,7 +38,7 @@ export default function ListCard(props: ListCardItem) {
                                         <img style={{ borderRadius: "8px", margin: 0 }} width="80px" height="80px" src={card.avatar} alt="" />
                                     </Grid>
                                     <Grid item xs={9}>
-                                        <Typography align='left' gutterBottom variant="h6" component="h2">
+                                        <Typography align='left' gutterBottom fontSize="18px" fontWeight="bold" component="h3">
                                             {card.title}
                                         </Typography>
                                         <CardActions sx={{ p: 0, m: 0 }}>

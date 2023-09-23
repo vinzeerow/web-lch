@@ -3,6 +3,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { CoverActivity } from '../../../type';
+import styled from 'styled-components';
 
 interface MainFeaturedPostProps {
   post: CoverActivity
@@ -12,7 +13,7 @@ export default function Cover(props: MainFeaturedPostProps) {
   const { post } = props;
 
   return (
-    
+    <CsContainer>
       <Paper
         sx={{
           position: 'relative',
@@ -43,22 +44,21 @@ export default function Cover(props: MainFeaturedPostProps) {
                 position: 'relative',
                 p: { xs: 3, md: 6 },
                 pr: { md: 0 },
-                height:"300px"
+                height: "300px"
               }}
             >
-              {/* <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                {post.title}
-              </Typography>
-              <Typography variant="h5" color="inherit" paragraph>
-                {post.description}
-              </Typography>
-              <Link variant="subtitle1" href="#">
-                {post.linkText}
-              </Link> */}
             </Box>
           </Grid>
         </Grid>
 
       </Paper>
+    </CsContainer>
+
   );
 }
+const CsContainer = styled.div`
+    @media screen and (max-width:600px) {
+        display:none;
+    }
+
+`
