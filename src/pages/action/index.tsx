@@ -23,7 +23,7 @@ const ListCardActivity = [
         linkFanpage: "https://www.facebook.com/chsvcanglongdhct",
         time: "Tháng 10 hằng năm",
         address: "Các huyện trên địa bàn tỉnh Trà Vinh",
-        description:"một trong các hoạt động truyền thống của Liên Chi hội sinh viên Trà Vinh tại Trường Đại học Cần Thơ nhằm hướng đến hỗ trợ các em học sinh cấp tiểu học, nhất là các em có hoàn cảnh khó khăn. Với mục tiêu mỗi năm Hành trình tình nguyện sẽ đặt chân đến một huyện trên địa bàn tỉnh Trà Vinh để thực hiện các hoạt động nhằm tạo ra một môi trường học tập và vui chơi tích cực để các bạn học sinh có thể học hỏi được một số kiến thức và kỹ năng cần thiết trong dịp nghỉ hè"
+        description:"Một trong các hoạt động truyền thống của Liên Chi hội sinh viên Trà Vinh tại Trường Đại học Cần Thơ nhằm hướng đến hỗ trợ các em học sinh cấp tiểu học, nhất là các em có hoàn cảnh khó khăn. Với mục tiêu mỗi năm Hành trình tình nguyện sẽ đặt chân đến một huyện trên địa bàn tỉnh Trà Vinh để thực hiện các hoạt động nhằm tạo ra một môi trường học tập và vui chơi tích cực để các bạn học sinh có thể học hỏi được một số kiến thức và kỹ năng cần thiết trong dịp nghỉ hè"
     },
     {
         title: 'Văn nghệ và trao học bổng Trà Vinh - Tình đất tình người',
