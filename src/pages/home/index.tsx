@@ -38,7 +38,7 @@ const ListCardUnit = [
     },
     {
         title: 'CHSV Châu Thành',
-        image: 'https://source.unsplash.com/random?wallpapers',
+        image: '/images/cover-card-chauthanh.jpg',
         avatar: '/images/logo-chauthanh.jpg',
         linkText: 'Continue reading…',
         linkFanpage: "https://www.facebook.com/chsvchauthanhtravinh"
@@ -52,7 +52,7 @@ const ListCardUnit = [
     },
     {
         title: 'CHSV TP. Trà Vinh',
-        image: 'https://source.unsplash.com/random?wallpapers',
+        image: '/images/cover-card-tptv.jpg',
         avatar: '/images/logo-tptv.jpg',
         linkText: 'Continue reading…',
         linkFanpage: "https://www.facebook.com/chsvtptravinh.ctu"
@@ -73,7 +73,7 @@ const ListCardUnit = [
     },
     {
         title: 'CHSV Trà Vinh - Hòa An',
-        image: 'https://source.unsplash.com/random?wallpapers',
+        image: '/images/cover-card-hoaan.jpg',
         avatar: '/images/logo-hoaan.png',
         linkText: 'Continue reading…',
         linkFanpage: "https://www.facebook.com/profile.php?id=100087010830546"
