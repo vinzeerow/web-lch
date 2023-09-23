@@ -59,7 +59,7 @@ const ListCardUnit = [
     },
     {
         title: 'CHSV Tiểu Cần',
-        image: 'https://source.unsplash.com/random?wallpapers',
+        image: '/images/cover-card-tieucan.jpg',
         avatar: '/images/logo-tieucan.png   ',
         linkText: 'Continue reading…',
         linkFanpage: "https://www.facebook.com/profile.php?id=100083577125972"
@@ -74,7 +74,7 @@ const ListCardUnit = [
     {
         title: 'CHSV Trà Vinh - Hòa An',
         image: 'https://source.unsplash.com/random?wallpapers',
-        avatar: 'https://source.unsplash.com/random?wallpapers',
+        avatar: '/images/logo-hoaan.png',
         linkText: 'Continue reading…',
         linkFanpage: "https://www.facebook.com/profile.php?id=100087010830546"
     }
