@@ -31,7 +31,7 @@ const ListCardUnit = [
     },
     {
         title: 'CHSV Cầu Ngang',
-        image: 'https://source.unsplash.com/random?wallpapers',
+        image: '/images/cover-card-caungang.jpg',
         avatar: '/images/logo-caungang.jpg',
         linkText: 'Continue reading…',
         linkFanpage: "https://www.facebook.com/profile.php?id=100083345082184"
@@ -45,7 +45,7 @@ const ListCardUnit = [
     },
     {
         title: 'CHSV Duyên Hải',
-        image: 'https://source.unsplash.com/random?wallpapers',
+        image: '/images/cover-card-duyenhai.jpg',
         avatar: '/images/logo-duyenhai.png',
         linkText: 'Continue reading…',
         linkFanpage: "https://www.facebook.com/CHSVDuyenHaiCTU"
@@ -66,7 +66,7 @@ const ListCardUnit = [
     },
     {
         title: 'CHSV Trà Cú',
-        image: 'https://source.unsplash.com/random?wallpapers',
+        image: '/images/cover-card-tracu.jpg',
         avatar: '/images/logo-tracu.jpg',
         linkText: 'Continue reading…',
         linkFanpage: "https://www.facebook.com/profile.php?id=100087659095360"
