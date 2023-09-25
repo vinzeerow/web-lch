@@ -54,7 +54,7 @@ const ListCardActivity = [
     },
     {
         title: 'Mùa hè xanh',
-        image: '/images/hoat-dong-hoi-thao-truyen-thong.jpg',
+        image: '/images/hoat-dong-mua-he-xanh.jpg',
         linkText: 'Continue reading…',
         linkFanpage: "https://www.facebook.com/chsvchauthanhtravinh",
         time: "Tháng 07 hằng năm",
